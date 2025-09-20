@@ -4,14 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class GeradorDeCenarioTras : MonoBehaviour
 {
-    [Header("Configuração do Cenário")]
+    [Header("Configuraï¿½ï¿½o do Cenï¿½rio")]
     public GameObject[] blocosCenario;   
     public GameObject finalCaminho;      
     public float tamanhoTile = 10f;      
     public int tilesVisiveis = 6;        
     public int maxTilesAntesDoFinal = 10; 
 
-    [Header("Configuração de Obstáculos")]
+    [Header("Configuraï¿½ï¿½o de Obstï¿½culos")]
     public GameObject[] obstaculos;      
     public float chanceObstaculo = 0.3f;  
     public float[] lanes = { -2f, 0f, 2f }; 
@@ -44,7 +44,6 @@ public class GeradorDeCenarioTras : MonoBehaviour
             SceneManager.LoadScene("Inicio");
             return;
         }
-
         if (!gerouFinal)
         {
             
